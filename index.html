@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping List</title>
+</head>
+
+<body>
+    
+    <!-- Header / Cabeçalho -->
+    
+    <header class="mb-5 mt-3">
+        <div class="row text-center">
+            <h1>Shopping List</h1>
+        </div>
+    </header>
+    
+    <!-- Bootstrap container to organize elements in page -->
+    
+    <div class="container-fluid">
+
+
+        <!-- Row with input -->
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6 mb-2">
+
+                <input type="text" class="form-control" id="input" placeholder="Insert a New Item">
+           
+            </div>
+
+
+        <!-- Row with buttons -->
+
+        <div class="row justify-content-center p-0">
+            <div class="col-lg-6 text-end">
+
+                <button class="btn btn-outline-primary mx-1 rounded addButton" type="button"
+                title="adds a new item to your list">Add</button>
+                        
+                <button class="btn btn-outline-primary mx-1 rounded delAllButton" type="button"
+                title="deletes all items in your list">Delete All</button>
+
+                <button class="btn btn-outline-primary ml-1 rounded delMarkedButton" type="button"
+                title="deletes all items that have been marked on your list">Delete Marked</button>
+           
+            </div>
+        </div>
+
+
+        <!-- Row with Total Price -->
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6 d-flex totalBar">
+                
+                <div class="col-9 col-lg-10 text-end align-self-center"><span class="total">Total:</span></div>
+
+                <div class="col text-end priceCol"><span class="price"></span></div>
+
+             </div>
+        </div>
+
+
+            <!-- Row with list display -->
+        
+        <div class="row justify-content-center">
+                <div class="col-lg-6 d-flex listDiv">
+                    
+                    <ul></ul>
+                
+                </div>
+            </div>
+    
+    </div>
+
+        <script src="app.js" type="module"></script>
+</body>
+
+</html>

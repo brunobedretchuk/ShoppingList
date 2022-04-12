@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(232,232,232,1) 0%, rgba(231,240,255,1) 0%, rgba(255,255,255,1) 100%);;
+    color: rgb(50, 120, 201);
+}
+
+h1{
+    letter-spacing: 5px;
+    cursor: default;
+}
+
+
+#input {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    }
+
+li {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: .7rem;
+    align-items: center;
+    margin-right:3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.itemButton {
+    background-color: transparent;
+    border: 0;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: red;
+    transition-duration: .25s;
+    margin: 0;
+}
+
+.cart {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.cart:hover {
+background-color: rgb(94, 255, 94);
+transform: scale(120%);
+}
+
+.x:hover {
+    background-color: rgb(247, 72, 72);
+    color: white;
+    transform: scale(120%);
+    }
+
+.itemButton:active{
+    background-color: transparent;
+color: rgb(247, 72, 72);
+}
+
+.total{
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+ }
+
+.price{
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.totalBar{
+    border-bottom: 1px solid rgb(85, 160, 247);
+}
+
+.isBought{
+    opacity: 0.5;
+    text-decoration: line-through;
+    color: black;
+    text-decoration-color: black;
+}
